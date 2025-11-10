@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Heart-Rate Analyzer</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="dark-bg center">
+<div class="upload-card">
+  <h1>💚 Heart-Rate Dashboard</h1>
+  <p>Select any video. Analysis runs for the entire duration.</p>
+  <form action="/start" method="post" enctype="multipart/form-data">
+    <input type="file" name="video" accept="video/*" required>
+    <button type="submit">Upload &amp; Start Analysis</button>
+  </form>
+</div>
+</body>
+</html>
